@@ -1,5 +1,13 @@
-//输入整数，将每位数字打印出来（从左向右打印，空格区分）
-//2018/11/14 更新
+#include <stdio.h>
 int main() {
-    //to do sth
+	int x,i=0,a[100],j;
+	scanf("%d",&x);
+	while(x!=0){
+		i++;
+		a[i]=x%10;
+		x=x/10;
+	}
+	for(;i>0;i--)
+	printf("%d ",a[i]);
+  return 0; 
 }
